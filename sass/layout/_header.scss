@@ -1,0 +1,190 @@
+/*-----------------------------------------------------------*/
+/* Header */
+/*-----------------------------------------------------------*/
+
+//colores: 
+//#8e9df6
+//#a8b6f8
+
+// #001257 azul marino
+//#001D91
+
+
+.main-header{
+    display: flex;
+    flex-direction: column;
+    
+   
+
+    @media (max-width: 768px)  {
+        &{ /* .main-header */
+            flex-direction: column-reverse;
+        }
+    }
+}
+
+#menu{
+    display: none;
+
+    &:checked + .nav-bar {
+        display: block;
+    }
+
+    &:checked  ~ .search-bar .menu-toogle .menu-toogle__label {
+        background-color: rgb(63, 0, 47);
+    }
+}
+
+
+
+/*-----------------------------------------------------------*/
+/* Navbar */
+/*-----------------------------------------------------------*/
+.nav-bar{
+    background-color:#001257;
+
+    &__nav-list{
+        display: flex;
+        list-style-type:none ;
+        justify-content: center;
+        
+
+        @media(max-width: 768px){
+            &{
+                flex-direction: column;
+            }
+        }
+    }
+
+    &__nav-item {
+        text-align: center;
+        background-color:#001D91;
+
+    }
+
+    &__nav-link {
+        display: block;
+        background-color:#080806;
+        padding: 1rem 2rem;
+        text-decoration: none;
+        background-color:#001257;
+        color: white;
+        border-right: 1px solid black ;
+    }
+
+    @media (max-width: 768px){
+        &{
+            display: none;
+        }
+    }
+}
+
+
+
+/*-----------------------------------------------------------*/
+/* Searchbar */
+/*-----------------------------------------------------------*/
+.search-bar {
+    background-color:#001D91;
+    display: flex;
+    justify-content: space-around;
+    
+    &__logo-container {
+        width: 18.75em;
+        height: 3.75em;
+        text-align: center;
+        padding: 1rem;
+        color: white
+    }
+
+    &__form-container{
+        padding: 1em;
+        background-color: #001D91;
+        display: flex;
+        flex-basis: 100%;
+        justify-content: center;
+    }
+
+    &__form-label {
+        background-color: white;
+        border: 2px solid black;
+    }
+
+    &__form-search {
+        background-color: white;
+        width: 70%;
+    }
+
+    &__form-submit {
+        background-color: white;
+        color: black;
+    }
+
+    &__carrito-container{
+        flex: 0 0 3rem /* short-hand*/;
+        background-color:#001D91;
+        border-left: 2px solid black;
+        color: white;
+        text-align: center;
+        padding-top: 1rem;
+    }
+
+
+}
+
+
+
+/*-----------------------------------------------------------*/
+/* Menú toogle */
+/*-----------------------------------------------------------*/
+
+.menu-toogle{
+    display: none;
+    background-color: red;
+    flex: 0 0 3rem;
+    position: relative;
+    cursor: pointer;
+
+    &__label{
+        display: block;
+        background-color: black;
+        height: 100%;
+    }
+    &__top-bread ,
+    &__meat,
+    &__botton-bread {
+        display: block;
+        background-color: #333;
+        height: .2rem;
+        position: absolute;
+        left: .5rem;
+        right: .5rem;
+        
+    }
+
+    &__top-bread {
+        top: .8rem;
+    }
+
+    &__meat {
+        top: 50%;
+        margin-top: -.1rem;
+    }
+
+    &__botton-bread {
+        bottom: .8rem;
+    }
+
+
+
+    @media(max-width: 768px){
+        &{
+            display: block;
+        }
+    }
+}
+
+
+.p-carrito {
+    display:none
+}
