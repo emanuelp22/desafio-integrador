@@ -2,6 +2,12 @@
 
     display: grid;
     place-items: center;
+    font-size: 1rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    background-color:#7bc5ae;
+    margin-top: 2rem;
+    padding: 40px;
 
     @media (min-width: 768px){
     display: grid ;
@@ -17,7 +23,12 @@
 }
 
 .title-nos {
+
+    margin-top: 1rem;
+    
+    @media (min-width: 768px){
     margin-top: 2rem;
+    }
 }
 
 strong {
