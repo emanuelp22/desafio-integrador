@@ -1,4 +1,9 @@
 .div-nos{
+
+    display: grid;
+    place-items: center;
+
+    @media (min-width: 768px){
     display: grid ;
     place-items: center;
     padding: 60px;
@@ -8,6 +13,7 @@
     margin-left: 12rem;
     margin-right: 12rem;
     margin-top: 4rem;
+    }
 }
 
 .title-nos {
