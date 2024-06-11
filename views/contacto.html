@@ -1,12 +1,141 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
-    <h1>Contacto</h1>
+
+    <header class="main-header"> </header>
+        <input type="checkbox" name="" id="menu">
+        
+        <nav class="nav-bar">
+          <ul class="nav-bar__nav-list">
+            <li class="nav-bar__nav-item">
+              <a href="/index.html" class="nav-bar__nav-link">Inicio</a>
+            </li>
+            <li class="nav-bar__nav-item">
+              <a href="#" class="nav-bar__nav-link">Alta</a>
+            </li>
+            <li class="nav-bar__nav-item">
+              <a href="#" class="nav-bar__nav-link">Nosotros</a>
+            </li>
+            <li class="nav-bar__nav-item">
+              <a href="/views/contacto.html" class="nav-bar__nav-link">Contacto</a>
+            </li>
+          </ul>
+        </nav> <!--nav-bar-->
+  
+        <div class="search-bar">
+          <div class="search-bar__logo-container"> <img src="/public/images/logo2.png" alt="logo del sitio" class="logo-img"></div>
+          <form action="#" class="search-bar__form-container">
+          <label for="busqueda" class="search-bar__form-label">Buscar</label>
+          <input type="search" class="search-bar__form-search" id="busqueda">
+          <input type="submit" class="search-bar__form-submit" value="Buscar">
+          </form>
+          <div class="search-bar__carrito-container"><i class="fa-solid fa-cart-shopping"></i></div>
+          <div class="menu-toogle">
+            <label for="menu" class="menu-toogle__label">
+              <span class="menu-toogle__top-bread"></span>
+              <span class="menu-toogle__meat"></span>
+              <span class="menu-toogle__botton-bread"></span>
+            </label>
+          </div>
+        </div> <!--search-bar-->
+
+        <main>
+            <section class="section-cards">
+              <header class="section-cards__header">
+                <h1>Contactanos!</h1>
+                <p class="p-carrito">Se encontraron X productos</p>
+              </header>
+            </section>
+  </header>
+
+
+            <div class="form-container"> <!-- formulario-->
+              <fieldset class="fieldset-1">
+            
+                <legend >Datos personales</legend>
+                
+                <div class="margin-1">
+                  <label class="lbl-1" for="lbl-nombre">Nombre:*</label>
+                  <input class="inp-1" type="text" id="lbl-nombre" name="nombre">
+                </div>
+          
+                <div>
+                  <label class="lbl-1" for="lbl-apellido">Apellido:*</label>
+                  <input class="inp-1" type="text" id="lbl-apellido" name="apellido">
+                </div>
     
+                <div>
+                  <label class="lbl-1b"  for="lbl-documento">Documento:*</label>
+                  <input class="inp-1" type="text" id="lbl-documento" name="documento">
+                </div>
+          
+                <div>
+                  <label class="lbl-1b"  for="lbl-nacionalidad">Nacionaldiad:*</label>
+                  
+                  <select class="inp-2" name="nacionalidad" id="lbl-nacionalidad">
+                    <option value="seleccionar">- Seleccionar -</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Brasil">Brasileña</option>
+                    <option value="Uruguay">Uruguaya</option>
+                    <option value="Otro">Otra</option>
+                    
+                </select>
+                </div>
+          
+                <div>
+                  <label class="lbl-1c" for="lbl-info">Contanos un poco de vos...</label>
+                  <textarea class="area" name="informacion" id="lbl-info" cols="20"></textarea>
+                </div>
+          
+                <div >
+                  <label class="lbl-1" >Sexo:*</label> <br>
+                  
+                    <div class="div-lbl">
+                      <input class="inp-3" type="radio" id="femenino" name="sexo" value="femenino">
+                      <label class="lbl-2" for="femenino">Femenino</label>
+                      
+                      <input class="inp-3" type="radio" id="femenino" name="sexo" value="masculino">
+                      <label class="lbl-3" for="masculino">Masculino</label>
+                      
+                      <input class="inp-3" type="radio" id="otro" name="sexo" value="otro">
+                      <label class="lbl-3" for="otro">Otro</label>
+    
+                    
+                      
+                    </div>
+                </div>
+    
+              </fieldset >
+              <div class="puntos"></div>
+    
+              <fieldset class="fieldset-2">
+                <legend>Datos de contacto</legend>
+                <div class="margin-1">
+                  <label class="lbl-1"  for="lbl-telefono">Teléfono:*</label>
+                  <input class="inp-4" type="text" id="lbl-telefono" name="telefono" placeholder="Código de área y número">
+                </div>
+                <div class="margin-2">
+                  <label class="lbl-1d"  for="lbl-email">Dirección de correo electronico:*</label>
+                  <input class="inp-4" type="email" id="lbl-email" name="email" placeholder="Ej: mail@gmail.com">
+                </div>
+    
+              </fieldset>
+    
+           </div>
+    
+    
+    
+    
+
+
+        </main>
+    
+        <script type="module" src="/main.js"></script>
 </body>
 </html>

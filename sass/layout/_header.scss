@@ -91,7 +91,8 @@
         height: 3.75em;
         text-align: center;
         padding: 1rem;
-        color: white
+        color: white;
+        
     }
 
     &__form-container{
@@ -199,8 +200,17 @@
 }
 
 .logo-img{
-    height: 180px;
+    height: 190px;
     display: block;
     position: absolute;
-    top: -1.6rem;
+    top: -1.5rem;
+
+    @media(max-width: 768px){
+        
+            display: block;
+            position: absolute;
+            height: 180px;
+            top: rem;
+
+    }
 }
