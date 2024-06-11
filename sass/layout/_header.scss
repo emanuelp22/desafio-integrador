@@ -200,17 +200,18 @@
 }
 
 .logo-img{
-    height: 190px;
+    height: 240px;
     display: block;
     position: absolute;
-    top: -1.5rem;
+    top: -3rem;
 
     @media(max-width: 768px){
         
             display: block;
             position: absolute;
-            height: 180px;
-            top: rem;
+            height: 160px;
+            left: 0rem;
+            top: -2.5rem;
 
     }
 }

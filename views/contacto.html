@@ -20,7 +20,7 @@
               <a href="#" class="nav-bar__nav-link">Alta</a>
             </li>
             <li class="nav-bar__nav-item">
-              <a href="#" class="nav-bar__nav-link">Nosotros</a>
+              <a href="/views/nosotros.html" class="nav-bar__nav-link">Nosotros</a>
             </li>
             <li class="nav-bar__nav-item">
               <a href="/views/contacto.html" class="nav-bar__nav-link">Contacto</a>
@@ -29,7 +29,7 @@
         </nav> <!--nav-bar-->
   
         <div class="search-bar">
-          <div class="search-bar__logo-container"> <img src="/public/images/logo2.png" alt="logo del sitio" class="logo-img"></div>
+          <div class="search-bar__logo-container"> <img src="/public/images/LOGO.png" alt="logo del sitio" class="logo-img"></div>
           <form action="#" class="search-bar__form-container">
           <label for="busqueda" class="search-bar__form-label">Buscar</label>
           <input type="search" class="search-bar__form-search" id="busqueda">
@@ -65,66 +65,67 @@
                   <input class="inp-1" type="text" id="lbl-nombre" name="nombre">
                 </div>
           
-                <div>
+                <div class="margin-1">
                   <label class="lbl-1" for="lbl-apellido">Apellido:*</label>
                   <input class="inp-1" type="text" id="lbl-apellido" name="apellido">
                 </div>
     
-                <div>
-                  <label class="lbl-1b"  for="lbl-documento">Documento:*</label>
-                  <input class="inp-1" type="text" id="lbl-documento" name="documento">
-                </div>
+                
           
-                <div>
-                  <label class="lbl-1b"  for="lbl-nacionalidad">Nacionaldiad:*</label>
+                <div class="margin-1">
+                  <label class="lbl-1b"  for="lbl-nacionalidad">Sucursal:*</label>
                   
-                  <select class="inp-2" name="nacionalidad" id="lbl-nacionalidad">
+                  <select class="inp-2" name="sucursal" id="lbl-sucursal">
                     <option value="seleccionar">- Seleccionar -</option>
-                    <option value="Argentina">Argentina</option>
-                    <option value="Brasil">Brasileña</option>
-                    <option value="Uruguay">Uruguaya</option>
-                    <option value="Otro">Otra</option>
+                    <option value="capital federal">Capital federal</option>
+                    <option value="avellaneda"> Avellaneda</option>
+                    <option value="lanus">Lanús</option>
+                    <option value="lomas">Lomas de zamora</option>
                     
                 </select>
                 </div>
           
-                <div>
-                  <label class="lbl-1c" for="lbl-info">Contanos un poco de vos...</label>
-                  <textarea class="area" name="informacion" id="lbl-info" cols="20"></textarea>
-                </div>
+                
           
-                <div >
-                  <label class="lbl-1" >Sexo:*</label> <br>
+                <div class="margin-1" >
                   
-                    <div class="div-lbl">
-                      <input class="inp-3" type="radio" id="femenino" name="sexo" value="femenino">
-                      <label class="lbl-2" for="femenino">Femenino</label>
+                  <label class="lbl-1" >Sexo:*</label>
+                    <div class="inp-1">
                       
-                      <input class="inp-3" type="radio" id="femenino" name="sexo" value="masculino">
-                      <label class="lbl-3" for="masculino">Masculino</label>
+                      <input type="radio" id="femenino" name="sexo" value="femenino">
+                      <label class="inp-3" for="femenino">Femenino</label>
                       
-                      <input class="inp-3" type="radio" id="otro" name="sexo" value="otro">
-                      <label class="lbl-3" for="otro">Otro</label>
+                      <input type="radio" id="femenino" name="sexo" value="masculino">
+                      <label class="inp-3" for="masculino">Masculino</label>
+                      
+                      <input  type="radio" id="otro" name="sexo" value="otro">
+                      <label class="inp-3" for="otro">Otro</label>
     
-                    
-                      
                     </div>
-                </div>
+                      
+                    
+             
+                 </div>
+                  <legend>Datos de contacto</legend>
+                  <div class="margin-1">
+                    <label class="lbl-1"  for="lbl-telefono">Teléfono:*</label>
+                    <input class="inp-1" type="text" id="lbl-telefono" name="telefono" placeholder="Código de área y número">
+                  </div>
+                  <div class="margin-1">
+                    <label class="lbl-1"  for="lbl-email">Email:*</label>
+                    <input class="inp-4" type="text" id="lbl-email" name="email" placeholder="Ej: mail@gmail.com">
+                  </div>
+              
     
               </fieldset >
               <div class="puntos"></div>
     
               <fieldset class="fieldset-2">
-                <legend>Datos de contacto</legend>
-                <div class="margin-1">
-                  <label class="lbl-1"  for="lbl-telefono">Teléfono:*</label>
-                  <input class="inp-4" type="text" id="lbl-telefono" name="telefono" placeholder="Código de área y número">
-                </div>
-                <div class="margin-2">
-                  <label class="lbl-1d"  for="lbl-email">Dirección de correo electronico:*</label>
-                  <input class="inp-4" type="email" id="lbl-email" name="email" placeholder="Ej: mail@gmail.com">
-                </div>
-    
+                  <div>
+                    <label class="lbl-1" for="lbl-info">Dejanos tu consulta</label>
+                    <textarea class="area" name="informacion" id="lbl-info" cols="20"></textarea>
+                  </div>
+                
               </fieldset>
     
            </div>

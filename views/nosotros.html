@@ -4,9 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nosotros</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
-    <h1>Nosotros</h1>
+    <header class="main-header">
+        <input type="checkbox" name="" id="menu">
+        
+        <nav class="nav-bar">
+          <ul class="nav-bar__nav-list">
+            <li class="nav-bar__nav-item">
+              <a href="#" class="nav-bar__nav-link">Inicio</a>
+            </li>
+            <li class="nav-bar__nav-item">
+              <a href="#" class="nav-bar__nav-link">Alta</a>
+            </li>
+            <li class="nav-bar__nav-item">
+              <a href="#" class="nav-bar__nav-link">Nosotros</a>
+            </li>
+            <li class="nav-bar__nav-item">
+              <a href="/views/contacto.html" class="nav-bar__nav-link">Contacto</a>
+            </li>
+          </ul>
+        </nav> <!--nav-bar-->
+  
+        <div class="search-bar">
+          <div class="search-bar__logo-container"> <img src="/images/LOGO.png" alt="logo del sitio" class="logo-img"></div>
+          <form action="#" class="search-bar__form-container">
+          <label for="busqueda" class="search-bar__form-label">Buscar</label>
+          <input type="search" class="search-bar__form-search" id="busqueda">
+          <input type="submit" class="search-bar__form-submit" value="Buscar">
+          </form>
+          <div class="search-bar__carrito-container"><i class="fa-solid fa-cart-shopping"></i></div>
+          <div class="menu-toogle">
+            <label for="menu" class="menu-toogle__label">
+              <span class="menu-toogle__top-bread"></span>
+              <span class="menu-toogle__meat"></span>
+              <span class="menu-toogle__botton-bread"></span>
+            </label>
+          </div>
+        </div> <!--search-bar-->
+  
+  
+      </header> <!--main-header-->
+
+      <main>
+        <h1>Nosotros!</h1>
+        <article>
+            <div class="div-nos">
+                <p>Nuestros servicios de impresión ofrecen soluciones creativas para realzar tu marca. Desde productos promocionales estándar hasta opciones personalizadas y exclusivas, nuestra calidad de impresión y diseño garantizan que tu marca destaque. Explora nuestras opciones de impresión y encuentra la manera perfecta de fortalecer la identidad de tu marca y conectar con tu audiencia.</p>
+            </div>
+        </article>
+      </main>
     
+      <script type="module" src="/main.js"></script>
 </body>
 </html>
