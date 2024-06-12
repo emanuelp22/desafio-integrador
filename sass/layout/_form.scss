@@ -61,12 +61,32 @@
 .fieldset-2{
    margin-top: 1.5rem;
    display: grid ;
-    place-items: center;
-    padding: 60px;
+   place-items: center;
+   padding: 60px;
 }
 
 .area {
    height: 20rem;
    width: 100%;
    margin-top: 1rem;
+}
+
+.btn-container {
+   display: grid ;
+   place-items: center;
+}
+
+.btn {
+
+   font-size: 1rem;
+   border-radius: 16px;
+   padding: 1rem;
+   background-color: #7bc5ae;
+
+   @media (min-width: 768px){
+   font-size: 2rem;
+   border-radius: 16px;
+   padding: 1rem;
+   background-color: #7bc5ae;
+   }
 }
