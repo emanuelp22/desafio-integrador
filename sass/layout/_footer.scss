@@ -1,17 +1,30 @@
 .footer-container{
+
+    background-color: #7bc5ae;
+    height: 100%;
+    margin-top: 6rem;
+    padding-top: 1rem;
+
+
+    @media (min-width: 768px){
     background-color: #7bc5ae;
     height: 100%;
     margin-top: 20rem;
     padding-top: 2rem;
+    }
     
 }
 
 .p-footer{
+
+    color: white;
+    
+    @media (min-width: 768px){
     padding-top: 0.5rem;
     font-size: 1.5rem;
     color: white;
     margin-left: 5rem;
-
+    }
 }
 
 .fa-facebook {
@@ -37,11 +50,17 @@
 }
 
 .fa-whatsapp{
+
+    margin-left: 3rem;
+    margin-right: 0.70rem ;
+
+    @media (min-width: 768px){
     color:white;
     font-size: 1.5rem;
     cursor: pointer;
     margin-left: 2.8rem;
     margin-right: 1rem;
-    cursor: pointer;   
+    cursor: pointer; 
+    }  
 }
 
