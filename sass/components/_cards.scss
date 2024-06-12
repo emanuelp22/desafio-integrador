@@ -32,12 +32,6 @@
         
     }
 
-    &:hover &__image,
-    &-:focus &__image {
-        transform: scale(1.4) rotate(5deg);
-        transform-origin: center;
-       
-    }
 
     &:nth-child(1n + 1){
         background-image: linear-gradient(to top ,#7bc5ae 0%, #ffffff 100%);
@@ -79,7 +73,7 @@
     text-align: center;
     padding-left: 1rem;
     padding-right: 1rem;
-    font-family: "Caveat", cursive; tamaño-óptico-de-fuente: automático;;
+    font-family: "Caveat", cursive;
     font-size: 2rem;
     
 }
