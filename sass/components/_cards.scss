@@ -22,33 +22,34 @@
     &__image-container{
         height:200px;
         overflow: hidden;
-        
+       
     }
 
     &__img{
         width: 100%;
         height: 100%;
         object-fit: cover;
-    
-
+        
     }
 
     &:hover &__image,
     &-:focus &__image {
         transform: scale(1.4) rotate(5deg);
         transform-origin: center;
-        
+       
     }
 
     &:nth-child(1n + 1){
         background-image: linear-gradient(to top ,#7bc5ae 0%, #ffffff 100%);
+        
     }
 
     &__image-container{
         height:210px;
         background-color: #7bc5ae;
         overflow: hidden;
-        
+        display: grid;
+        place-content: center;
         
     }
 
