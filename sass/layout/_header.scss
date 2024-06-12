@@ -106,12 +106,18 @@
     &__form-label {
         background-color: white;
         border: 2px solid black;
+        @media (max-width:768px){
+            display: none;
+        }
         
     }
 
     &__form-search {
         background-color: white;
         width: 70%;
+        @media (max-width:768px){
+            display: none;
+        }
     }
 
     &__form-submit {
@@ -121,6 +127,8 @@
 
         @media (max-width:768px){
             height: 40px;
+            display: none;
+            
         }
     }
 
